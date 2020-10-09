@@ -1,0 +1,43 @@
+python install
+=============
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.6
+
+alias python=python3
+
+
+
+virtual env
+============
+sudo apt install python3-venv
+python3 -m venv tapas-env
+source tapas-env/bin/activate
+
+git
+=====
+sudo apt install git
+
+pip install ipython
+
+update pip
+==========
+pip install --upgrade pip
+
+fatal error: Python.h: No such file or directory
+================================================
+sudo apt-get install python3-dev
+
+
+gsutil
+=======
+pip install gsutil
+sudo apt-get install -y unzip
+
+
+os.system('python tapas/tapas/run_task_main.py --task="SQA" --output_dir="results" --noloop_predict --test_batch_size=3 --tapas_verbosity="ERROR" --compression_type= --init_checkpoint="tapas_sqa_base/model.ckpt" --bert_config_file="tapas_sqa_base/bert_config.json"  --mode="predict" 2> error')
+
+
+
